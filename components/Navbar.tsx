@@ -1,34 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { navLinks, colors } from "@/constants";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Mock auth state
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="w-full shadow-lg" style={{ backgroundColor: colors.bordo }}>
+    <nav 
+      className={`w-full transition-all fixed top-0 left-0 right-0 z-50 duration-300 ${
+        isScrolled ? 'shadow-lg' : ''
+      }`} 
+      style={{ 
+        backgroundColor: isScrolled ? colors.bordo : 'transparent'
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="shrink-0 flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div 
-                className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm"
-                style={{ backgroundColor: colors.cream }}
-              >
-                YT
-              </div>
-              <span 
-                className="font-bold text-xl"
-                style={{ color: colors.cream }}
-              >
-                Yosh Tarixchi
-              </span>
-            </Link>
-          </div>
+          <Logo />
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
