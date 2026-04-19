@@ -21,14 +21,14 @@ export default function Navbar() {
 
   return (
     <nav 
-      className={`w-full transition-all fixed top-0 left-0 right-0 z-50 duration-300 ${
+      className={`w-full transition-all fixed bg-[#722F37] top-0 left-0 right-0 z-50 duration-300 ${
         isScrolled ? 'shadow-lg' : ''
       }`} 
       style={{ 
-        backgroundColor: isScrolled ? colors.bordo : 'transparent'
+        backgroundColor: isScrolled ? colors.bordo : '#722F37'
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 backdrop-blur-sm  sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Logo />

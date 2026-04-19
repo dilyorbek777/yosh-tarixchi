@@ -179,3 +179,106 @@ export const footerData = {
         address: "Toshkent sh., Universitet ko'chasi, 5"
     }
 };
+
+// News data for pagination
+export const newsData = [
+    {
+        id: 1,
+        title: "Amir Temur yubileyi keng nishonlandirildi",
+        excerpt: "Buyuk sarkarda Amir Temur tavalludining 690 yilligi munosabati keng nishonlandirildi. Tadbir davomida...",
+        content: "O'zbekiston Respublikasi Prezidentining farmoni bilan Amur Temur tavalludining 690 yilligi munosabati keng nishonlandirildi. Tadbir davomida...",
+        author: "Qodir Aliyev",
+        date: "2024-03-25",
+        image: "https://picsum.photos/800/400?random=101",
+        category: "Yangiliklar",
+        readTime: "5 daqiqa o'qish"
+    },
+    {
+        id: 2,
+        title: "Xorazm shohligining yangi topilmalari",
+        excerpt: "Arxeologlar Xorazm shohligining poytaxti Qoraqal'a yaqin yangi qabristonlarni topdilar...",
+        content: "Xorazm viloyatida olib borilayotgan qazish ishlari davom etar ekan, arxeologlar Xorazm shohligining poytaxti Qoraqal'a yaqin yangi qabristonlarni topdilar. Bu topilmalar tarix fanlari uchun katta ahamiyatga ega...",
+        author: "Dilnoza Karimova",
+        date: "2024-03-24",
+        image: "https://picsum.photos/800/400?random=102",
+        category: "Arxeologiya",
+        readTime: "7 daqiqa o'qish"
+    },
+    {
+        id: 3,
+        title: "Buxoro da tarixchilar uchun xalqaro anjuman",
+        excerpt: "Buxoro shahrida O'zbekiston va xorijiy mamlakatlar olimlari ishtirok etilmoqda...",
+        content: "Buxoro shahrida O'zbekiston va xorijiy mamlakatlar olimlari ishtirok etilmoqda. Anjuman 3 kun davom etib, 20 dan ortiq ma'ruza qabul qiladi...",
+        author: "Bahodir Umarov",
+        date: "2024-03-23",
+        image: "https://picsum.photos/800/400?random=103",
+        category: "Konferensiya",
+        readTime: "4 daqiqa o'qish"
+    },
+    {
+        id: 4,
+        title: "Qadimiy qo'lyozmalar raqamlashtirildi",
+        excerpt: "O'zbekistonning qadimiy qo'lyozma yodgorliklarining raqamlashtirilishi boshlandi...",
+        content: "O'zbekiston Madaniyat vazirligi huzuridagi qadimiy qo'lyozma yodgorliklarining raqamlashtirilishi boshlandi. Bu loyiha doirasida 1000 dan ortiq qo'lyozmani raqamlashtirish rejalashtirilgan...",
+        author: "Gulnora Sodiqova",
+        date: "2024-03-22",
+        image: "https://picsum.photos/800/400?random=104",
+        category: "Madaniyat",
+        readTime: "6 daqiqa o'qish"
+    },
+    {
+        id: 5,
+        title: "Yosh tarixchilar orasida tanlov o'tkazildi",
+        excerpt: "Respublika tanlovining ikkinchi bosqichida yosh tarixchilar o'rtasida kurash o'tkazishdi...",
+        content: "Respublika tanlovining ikkinchi bosqichida yosh tarixchilar o'rtasida kurash o'tkazishdi. Yoshlar o'z bilimlarini namoyish etishdi...",
+        author: "Javlon Toshmatov",
+        date: "2024-03-21",
+        image: "https://picsum.photos/800/400?random=105",
+        category: "Tanlov",
+        readTime: "3 daqiqa o'qish"
+    },
+    {
+        id: 6,
+        title: "SamDU da yangi tarix fakulteti ochildi",
+        excerpt: "SamDU qoshida yangi tarix fakulteti ochildi, zamonaviy jihozlarga ega bo'ldi...",
+        content: "Samarqand Davlat Universiteti qoshida yangi tarix fakulteti ochildi. Yangi fakultet zamonaviy jihozlarga ega bo'lib, talabalarga sifatli ta'lim berishga qaratilgan...",
+        author: "Malika Xolmatova",
+        date: "2024-03-20",
+        image: "https://picsum.photos/800/400?random=106",
+        category: "Ta'lim",
+        readTime: "5 daqiqa o'qish"
+    },
+    {
+        id: 7,
+        title: "Buyuk ipak yo'li bo'yicha xalqaro loyiha",
+        excerpt: "YUNESKO ko'magida O'zbekistonning qadimiy shaharlari bo'yicha xalqaro loyiha ishga tushirilmoqda...",
+        content: "Birlashgan Millatlar Tashkiloti (YUNESKO) ko'magida O'zbekistonning qadimiy shaharlari bo'yicha xalqaro loyiha ishga tushirilmoqda. Loyiha doirasida 5 yil davom etib, 10 million dollar miqdorida mablag' ajratilgan...",
+        author: "Azizbek Rahimov",
+        date: "2024-03-19",
+        image: "https://picsum.photos/800/400?random=107",
+        category: "Loyiha",
+        readTime: "8 daqiqa o'qish"
+    },
+    {
+        id: 8,
+        title: "Qadimiy tangalarning ko'rgazilishi",
+        excerpt: "O'zbekiston Milliy muzeyida qadimiy tangalarning ko'rgazilishi ochildi...",
+        content: "O'zbekiston Milliy muzeyida qadimiy tangalarning ko'rgazilishi ochildi. Ko'rgazmada 100 dan ortiq qadimiy tangalar namoyish etilgan bo'lib, ular haqida to'liqroq ma'lumot berilmoqda...",
+        author: "Komiljon Ismoilov",
+        date: "2024-03-18",
+        image: "https://picsum.photos/800/400?random=108",
+        category: "Ko'rgazma",
+        readTime: "4 daqiqa o'qish"
+    },
+    {
+        id: 9,
+        title: "Yosh olimlar grant yutib oldilar",
+        excerpt: "O'zbekistonlik yosh olimlar xorijiy grantlar yutib oldilar...",
+        content: "O'zbekistonlik yosh olimlar xorijiy ilmiy grantlar yutib oldilar. Ular AQSH, Yevropa Ittifoqi va Osiyo mamlakatlarining nufuzli universitetlarida o'qish va tadqiqotlar olib borish imkoniyatiga ega bo'lishdi...",
+        author: "Nodira Begmatova",
+        date: "2024-03-17",
+        image: "https://picsum.photos/800/400?random=109",
+        category: "Grant",
+        readTime: "6 daqiqa o'qish"
+    }
+];
